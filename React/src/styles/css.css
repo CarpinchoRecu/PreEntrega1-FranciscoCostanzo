@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+@keyframes animation-pages {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: #241717;
+    animation: animation-pages 1.5s ease;
+    opacity: 1;
+}
+
+/* Estilo para la barra de scroll vertical */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+    /* Color del fondo de la barra */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #504f4f;
+    border-radius: 3px;
+    border: solid 1px;
+    /* Color del thumb (barra móvil) */
+}
+
+/* Estilo para la barra de scroll horizontal */
+::-webkit-scrollbar-horizontal {
+    height: 10px;
+    /* Altura de la barra */
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background: #504f4f;
+    /* Color del thumb (barra móvil) horizontal */
+}
+
+/*UI-BarraNav*/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*Titulo y Logo de la Barra de Navegacion*/
+    /*Botones de la Barra de Navegacion*/
+}
+
+nav .title-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    /*Animacion del Logo*/
+}
+
+nav .title-logo h2 {
+    font-size: 45px;
+}
+
+@keyframes animation_logo {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+header{
+    background-color: #504f4f;
+}
+
+nav .title-logo img {
+    width: 5rem;
+    height: 6rem;
+    margin: 0.8rem 3rem;
+    object-fit: contain;
+}
+
+nav .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav .buttons div {
+    padding: 2rem;
+}
+
+nav .buttons a {
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: bold;
+    color: #000000;
+    transition: 0.08s ease-in-out;
+    padding: 10px;
+    /*Animacion de Botones*/
+}
+
+nav .buttons a:hover {
+    border-bottom: solid 2px #d8d8d8;
+}
+
+.itemList{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 35px 0;
+}
+
+.itemList h2{
+    font-weight: bold;
+}
+
+.itemList p{
+    font-size: 10px;
+}
